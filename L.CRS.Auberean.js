@@ -15,13 +15,13 @@ import {toTransformation} from '../../geometry/Transformation';
 
 export var Auberean = Util.extend({}, CRS, {
 	wrapLng: [-180, 180],
-
+    
 	// Mean Earth Radius, as recommended for use by
 	// the International Union of Geodesy and Geophysics,
 	// see http://rosettacode.org/wiki/Haversine_formula
 	R: 500,
   
-  code: 'Auberean',
+ 	code: 'Auberean',
 	projection: LonLat,
 	transformation: toTransformation(1 / 180, 1, -1 / 180, 0.5),
 
