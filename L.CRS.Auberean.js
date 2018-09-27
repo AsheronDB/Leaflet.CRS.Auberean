@@ -23,7 +23,7 @@ export var Auberean = L.Util.extend({}, L.CRS, {
   
  	code: 'Auberean',
 	projection: L.Projection.LonLat,
-	transformation: toTransformation(1 / 180, 1, -1 / 180, 0.5),
+	transformation: L.transformation(1 / 180, 1, -1 / 180, 0.5),
 
 	// distance between two geographical points using spherical law of cosines approximation
 	distance: function (latlng1, latlng2) {
