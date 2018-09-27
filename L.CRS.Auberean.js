@@ -13,7 +13,7 @@ import {toTransformation} from '../../geometry/Transformation';
  * meters.
  */
 
-export var Auberean = Util.extend({}, CRS, {
+export var Auberean = L.Util.extend({}, L.CRS, {
 	wrapLng: [-180, 180],
     
 	// Mean Earth Radius, as recommended for use by
@@ -22,7 +22,7 @@ export var Auberean = Util.extend({}, CRS, {
 	R: 500,
   
  	code: 'Auberean',
-	projection: LonLat,
+	projection: L.Projection.LonLat,
 	transformation: toTransformation(1 / 180, 1, -1 / 180, 0.5),
 
 	// distance between two geographical points using spherical law of cosines approximation
