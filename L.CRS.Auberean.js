@@ -1,7 +1,9 @@
+/*
 import * as Util from '../../core/Util';
 import {CRS} from './CRS';
 import {LonLat} from '../projection/Projection.LonLat';
 import {toTransformation} from '../../geometry/Transformation';
+*/
 
 /*
  * @namespace CRS
