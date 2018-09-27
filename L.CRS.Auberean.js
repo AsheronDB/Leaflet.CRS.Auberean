@@ -15,7 +15,7 @@ import {toTransformation} from '../../geometry/Transformation';
  * meters.
  */
 
-export var Auberean = L.Util.extend({}, L.CRS, {
+export L.CRS.Auberean = L.Util.extend({}, L.CRS, {
 	wrapLng: [-180, 180],
     
 	// Mean Earth Radius, as recommended for use by
