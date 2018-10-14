@@ -2,17 +2,17 @@
  * @namespace CRS
  * @crs L.CRS.Auberean
  */
-  
+
 let Auberean = L.Util.extend({}, L.CRS, {
 	code: 'Auberean',
     wrapLng: [-180, 180],
- 
-    // Auberean radius
-    R: 384202.6,
+
+    // Auberean radius in meters
+    R: 398962,
 
     projection: L.Projection.LonLat,
     transformation: L.transformation(1 / 180, 1, -1 / 180, 0.5),
- 
+
     // distance between two geographical points using spherical law of cosines approximation
     distance: function (latlng1, latlng2) {
         var rad = Math.PI / 180,
@@ -25,5 +25,5 @@ let Auberean = L.Util.extend({}, L.CRS, {
         return this.R * c;
     }
 });
- 
+
 export default Auberean;
