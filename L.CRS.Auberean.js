@@ -29,10 +29,10 @@ import L from 'leaflet';
 // });
 
 
-export var Auberean = Util.extend({}, L.CRS.Earth, {
+export var Auberean = L.Util.extend({}, L.CRS.Earth, {
     code: 'Auberean',
-	projection: LonLat,
-	transformation: toTransformation(1 / 180, 1, -1 / 180, 0.5),
+	projection: L.Projection.LonLat,
+	transformation: L.transformation(1 / 180, 1, -1 / 180, 0.5),
     R: 398962
 });
 
